@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+{
+font-family: Arial, Helvetica, sans-serif;
+background-color:black;
+}
+.container
+{
+background-color:white;
+padding:16px;
+}
+*{
+box-sizing:border-box;
+}
+input[type=text],input[type=Password]
+{
+width:100%;
+padding:15px;
+margin:5px 0 22px 0;
+display:inline-block;
+border:none;
+background-color:#dbdbdb;
+}
+
+input[type=text]:focus,input[type=Password]:focus
+{
+background-color:#d1cfcf;
+ouline:none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn{
+background-color:#43b0aa;
+color:white;
+width:100%;
+margin:5px;
+padding:15px 0 20px 0;
+cursor:pointer;
+border:none;
+opacity:0.9;
+}
+.registerbtn:hover
+{
+opacity:0.8;
+}
+a
+{
+color:dodgerblue;
+}
+.signin
+{
+background-color:#0a1414;
+color:white;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+<div class="container">
+<h1>Register Form</h1>
+<P>Please fill in this Form to Register</p>
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" id="email"required>
+<label for="psw"><b>Password</b></label>
+<input type="Password" placeholder="Enter Password" name="psw" id="psw"required>
+<label for="psw-Repeat"><b>Repeat password</b></label>
+<input type="Password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat"required>
+<hr>
+<p>Go through our Terms & Conditions<a href="">Terms & conditions</a></p>
+<button type="submit"class="registerbtn">Register</button>
+</div>
+<div class="container signin">
+<p>Already have an Account?<a href="">SignIn</a></p>
+</div>
+</form>
+</body>
+</html>
+
